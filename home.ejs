@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Home</title>
+    <style>
+        body {
+            background-color: #fcfcfc;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .task-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        .task {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .date-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .numeric-date {
+            font-size: 30px;
+            font-weight: bold;
+            color: #0077b6;
+        }
+
+        .month-date {
+            font-size: 20px;
+            color: #0077b6;
+        }
+
+        .task-name-div {
+            font-size: 25px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .task-time-div {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .task-info-div {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .task:hover {
+            transform: translateY(-5px);
+        }
+
+        .add-button {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .add-form {
+            display: none;
+            position: fixed;
+            width: 500px;
+            right: 40px;
+            bottom: 40px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .add-form label {
+            display: block;
+            color: #0077b6;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .add-form input[type="number"],
+        .add-form input[type="text"],
+        .add-form select,
+        .add-form input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .add-form button {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .add-form button:hover {
+            background-color: #45a049;
+        }
+
+        .add-form input[type="number"]:focus,
+        .add-form input[type="text"]:focus,
+        .add-form select:focus,
+        .add-form input[type="time"]:focus {
+            outline: none;
+            border-color: #0077b6;
+        }
+
+        .delete-button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="add-button" onclick="toggleForm()">+</button>
+
+    <div>
+        <h1
+            style="background-color: #0077b6; padding: 10px; text-align: center; color: white; margin-left: 10px; margin-right: 10px; border-radius: 10px;">
+            TASK REMINDER</h1>
+    </div>
+
+    <div style="margin: 10px; border: 1px black solid; border-radius: 5px;;">
+        <div id="alertsContainer" style="margin: 10px; size: 15px; color: #0077b6;"></div>
+
+    </div>
+    
+    <ul class="task-container">
+        <% tasks.forEach(task=> { %>
+            <li class="task">
+                <div class="date-div">
+                    <div class="numeric-date">
+                        <%= task.date %>
+                    </div>
+                    <div class="month-date">
+                        <%= task.month %>
+                    </div>
+                </div>
+                <div class="task-name-div">
+                    <%= task.task_name %>
+                </div>
+                <div class="task-time-div">
+                    <%= task.time %>
+                </div>
+                <div class="task-info-div">
+                    <%= task.description %>
+                </div>
+                <form action="/delete-task" method="POST">
+                    <input type="hidden" name="taskId" value="<%= task._id %>">
+                    <button class="delete-button" type="submit">Delete</button>
+                </form>
+            </li>
+            <% }); %>
+    </ul>
+
+    <button class="add-button" onclick="toggleForm()">+</button>
+    <button class="add-button" onclick="logout()" style="bottom: 70px;">!</button>
+
+    <div class="add-form" id="addForm">
+        <form action="/add-task" method="POST">
+            <label for="date">Task Date:</label>
+            <input type="number" id="date" name="date" placeholder="Enter task date (1-31)" min="1" max="31" required>
+
+            <label for="month">Task Month:</label>
+            <select id="month" name="month" required>
+                <option value="" disabled selected>Select month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+
+            <label for="time">Task Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" name="task_name" placeholder="Enter task name" required>
+
+            <label for="description">Task Description:</label>
+            <input type="text" id="description" name="description" placeholder="Enter task description" required>
+
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+
+    <script>
+        async function fetchAlerts() {
+            try {
+                const response = await fetch('http://localhost:5000/alerts');
+                const alerts = await response.text(); // Parse response as text
+                const alertsContainer = document.getElementById('alertsContainer');
+
+                alertsContainer.innerHTML = alerts; // Set the content of alertsContainer with the alerts text
+            } catch (error) {
+                console.error('Error fetching alerts:', error);
+            }
+        }
+
+        window.onload = fetchAlerts;
+        setInterval(fetchAlerts, 1000);
+
+        function toggleForm() {
+            var form = document.getElementById("addForm");
+            if (form.style.display === "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+        }
+        function deleteTask(taskId) {
+            fetch(`/delete-task?id=${taskId}`, {
+                method: 'GET'
+            })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.reload();
+                    } else {
+                        console.error("Error deleting task:", response.statusText);
+                    }
+                })
+                .catch(error => {
+                    console.error("Error deleting task:", error);
+                });
+        }
+        function logout() {
+            fetch('/logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            })
+                .then(response => {
+                    if (response.redirected) {
+                        window.location.href = response.url;
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+
+</html>
