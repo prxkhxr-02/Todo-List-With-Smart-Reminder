@@ -1,65 +1,41 @@
-# Todo-List-With-Smart-Reminder
-**Smart Reminder Todo List**
+<h1 align="center">Hi 👋, I'm Prakhar Pandey</h1>
+<h3 align="center">A passionate frontend developer & data science student from India</h3>
 
-**Description:**
-This application is a smart todo list designed to help you manage your tasks efficiently with intelligent reminders. It allows you to organize your tasks, set priorities, and receive reminders based on various factors such as due dates, locations, and task dependencies.
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=prxkhxr-02&label=Profile%20views&color=0e75b6&style=flat" alt="prxkhxr-02" /> </p>
 
-**Features:**
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=prxkhxr-02" alt="prxkhxr-02" /></a> </p>
 
-1. **Task Management:**
-   - Add, edit, and delete tasks easily.
-   - Organize tasks into categories or projects for better management.
-   - Set due dates, priorities, and additional notes for each task.
+<p align="left"> <a href="https://twitter.com/lavishakash" target="blank"><img src="https://img.shields.io/twitter/follow/lavishakash?logo=twitter&style=for-the-badge" alt="lavishakash" /></a> </p>
 
-2. **Smart Reminders:**
-   - **Time-based Reminders:** Receive reminders based on the due dates and times you set for tasks.
-   - **Location-based Reminders:** Get notified when you reach or leave a specific location associated with a task.
-   - **Dependency-based Reminders:** Receive reminders for tasks that are dependent on the completion of other tasks.
-   - **Smart Suggestions:** Receive intelligent suggestions for task completion based on your previous activity and priorities.
+- 🔭 I’m currently working on **To do list with smart reminder**
 
-3. **Customization:**
-   - Customize reminder preferences such as notification sounds, frequency, and appearance.
-   - Choose your preferred method of reminder delivery, including push notifications, emails, or SMS.
+- 👯 I’m looking to collaborate on **Notes-Taking**
 
-4. **Sync Across Devices:**
-   - Sync your todo list across multiple devices to access your tasks and reminders anywhere, anytime.
-   - Seamless integration with cloud storage services like Google Drive or Dropbox for data backup and synchronization.
+- 🤝 I’m looking for help with **Word-Frequency-Analyzer**
 
-5. **Security:**
-   - Ensure the security of your task data with end-to-end encryption.
-   - Optional passcode or biometric authentication for accessing the app to protect sensitive information.
+- 👨‍💻 All of my projects are available at [https://cxnuyhaf7eugwmedaazoxa.on.drv.tw/Portfolio%20Website/portfolio1/](https://cxnuyhaf7eugwmedaazoxa.on.drv.tw/Portfolio%20Website/portfolio1/)
 
-**How to Use:**
+- 💬 Ask me about **frontend & backend**
 
-1. **Add Tasks:**
-   - Tap the "+" button to add a new task.
-   - Enter task details such as title, due date, priority, and any additional notes.
-   - Assign the task to a category or project if needed.
+- 📫 How to reach me **mailmeprakhar.02@gmail.com**
 
-2. **Set Reminders:**
-   - Specify reminders for tasks by setting due dates and times.
-   - Enable location-based reminders by adding relevant locations to tasks.
-   - Link dependent tasks to receive reminders based on task dependencies.
+- 📄 Know about my experiences [https://drive.google.com/file/d/1JPNRmOBNNJTG3-zTGf9SUctFji8xCBqq/view?usp=drive_link](https://drive.google.com/file/d/1JPNRmOBNNJTG3-zTGf9SUctFji8xCBqq/view?usp=drive_link)
 
-3. **Receive Notifications:**
-   - Get notified according to your reminder settings.
-   - Receive reminders on your device or through other preferred communication channels.
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/lavishakash" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="lavishakash" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/prakhar-pandey-78a006250" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="prakhar-pandey-78a006250" height="30" width="40" /></a>
+<a href="https://fb.com/https://www.facebook.com/profile.php?id=100013598855956" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/profile.php?id=100013598855956" height="30" width="40" /></a>
+<a href="https://instagram.com/prxkhxr_02" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="prxkhxr_02" height="30" width="40" /></a>
+<a href="https://www.hackerrank.com/mailmeprakhar_02" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="mailmeprakhar_02" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/lavishakash" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="lavishakash" height="30" width="40" /></a>
+</p>
 
-4. **Manage Tasks:**
-   - Mark tasks as completed when finished.
-   - Edit or delete tasks as needed.
-   - Reorder tasks or change priorities to adjust your todo list dynamically.
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> </p>
 
-5. **Customize Settings:**
-   - Access app settings to customize reminder preferences, synchronization options, and security settings.
-   - Explore advanced features such as integration with calendar apps or task automation tools.
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=prxkhxr-02&show_icons=true&locale=en&layout=compact" alt="prxkhxr-02" /></p>
 
-**Compatibility:**
-- Compatible with iOS and Android devices.
-- Web version available for desktop access.
-- Integrations with popular productivity tools like Microsoft Outlook, Google Calendar, and Slack.
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=prxkhxr-02&show_icons=true&locale=en" alt="prxkhxr-02" /></p>
 
-**Feedback:**
-We value your feedback! If you have any suggestions for improvements or encounter any issues while using the app, please don't hesitate to reach out to our support team.
-
-Thank you for choosing Smart Reminder Todo List to streamline your task management and boost your productivity!
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=prxkhxr-02&" alt="prxkhxr-02" /></p>
