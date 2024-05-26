@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Prakhar Pandey</h1>
-<h3 align="center">A passionate frontend developer & data science student from India</h3>
+<h3 align="center">BTECH'25 | Java | Pythons | C++ | Web Development and Data Science- Pursuing</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=prxkhxr-02&label=Profile%20views&color=0e75b6&style=flat" alt="prxkhxr-02" /> </p>
 
